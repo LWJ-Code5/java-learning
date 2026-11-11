@@ -25,3 +25,4 @@ if(x = 0 && y = 0);
 ```
 - switch（），（）括号里面的表达式可以是字符，整数型byte short int，枚举，字符串
 - case的值必须是真实数据，不能是变量
+- switch没有break时，case会发生case穿透，case穿透会从目标代码开始运行到代码结尾
