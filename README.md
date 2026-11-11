@@ -24,3 +24,4 @@ if(body >= 180) System.out.println("太高了");
 if(x = 0 && y = 0);
 ```
 - switch（），（）括号里面的表达式可以是字符，整数型byte short int，枚举，字符串
+- case的值必须是真实数据，不能是变量
