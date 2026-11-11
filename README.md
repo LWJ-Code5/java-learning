@@ -26,3 +26,21 @@ if(x = 0 && y = 0);
 - switch（），（）括号里面的表达式可以是字符，整数型byte short int，枚举，字符串
 - case的值必须是真实数据，不能是变量
 - switch没有break时，case会发生case穿透，case穿透会从目标代码开始运行到代码结尾
+- 注意这种情况，代码如下
+```
+int num = 5;
+        switch (num){
+            case 1:
+                System.out.println("星期一");
+            default:
+                System.out.println("没有这个星期");
+            case 2:
+                System.out.println("星期二");
+            case 3:
+                System.out.println("星期三");
+        }
+```
+/*
+没有这个星期
+星期二
+星期三*/
