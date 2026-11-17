@@ -44,3 +44,46 @@ int num = 5;
 没有这个星期
 星期二
 星期三*/
+#switch的新特性
+##第一个特性
+- 箭头标签
+```
+int num = 5;
+        switch (num) {
+            case 1 -> System.out.println("星期一");
+            default -> System.out.println("没有这个星期");
+            case 2 -> System.out.println("星期二");
+            case 3 -> System.out.println("星期三");
+        }
+```
+##第二个特性
+- case后面可以写多个值
+```
+case 1,4,5,6 -> System.out.println("星期一");
+```
+##第三个特性
+- switch可以有运行结果，要用到yield关键字
+```
+
+        int num = 5;
+           String name = switch (num) {
+//               case 1, 4, 5, 6 -> {
+//                   yield "一";
+//               }
+//               default -> {
+//                   yield "没有这星期";
+//               }
+//               case 2 -> {
+//                   yield "三";
+//               }
+//               case 3 -> {
+//                   yield "四";
+//               }
+               //若代码只有一行，可以省略大括号和yield，上面的代码省略如下
+               case 1, 4, 5, 6 -> "一";
+               default -> "没有这星期";
+               case 2 ->  "三";
+               case 3 ->  "四";
+           };
+        System.out.println(name);
+```
