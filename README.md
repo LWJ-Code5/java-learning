@@ -40,12 +40,15 @@ int num = 5;
                 System.out.println("星期三");
         }
 ```
-/*
-没有这个星期
-星期二
-星期三*/
-#switch的新特性
-##第一个特性
+- 代码运行结果
+没有这个星期<br>
+星期二<br>
+星期三
+
+
+# switch的新特性
+
+## 第一个特性
 - 箭头标签
 ```
 int num = 5;
@@ -56,12 +59,12 @@ int num = 5;
             case 3 -> System.out.println("星期三");
         }
 ```
-##第二个特性
+## 第二个特性
 - case后面可以写多个值
 ```
 case 1,4,5,6 -> System.out.println("星期一");
 ```
-##第三个特性
+## 第三个特性
 - switch可以有运行结果，要用到yield关键字
 ```
 
