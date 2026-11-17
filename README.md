@@ -40,7 +40,7 @@ int num = 5;
                 System.out.println("星期三");
         }
 ```
-- 代码运行结果
+- 代码运行结果<br>
 没有这个星期<br>
 星期二<br>
 星期三
@@ -65,7 +65,7 @@ int num = 5;
 case 1,4,5,6 -> System.out.println("星期一");
 ```
 ## 第三个特性
-- switch可以有运行结果，要用到yield关键字
+- switch可以有运行结果，要用到yield关键字，注意这个特性最后的大括号要有分号
 ```
 
         int num = 5;
