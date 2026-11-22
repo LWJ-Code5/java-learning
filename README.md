@@ -114,3 +114,21 @@ public class Main {
 System.out.println("%.3f",num);   // 错误：println 不支持两个参数
 System.out.printf("%.3f", num);   // 正确
 ```
+**这种题，要注意有特殊情况，就要判断，n是1或2的时候**
+```
+Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int F1 = 0;
+        int F2 = 1;
+        int F3 = 0;
+        for(int i = 1 ; i <= n ; i++){
+            if(n ==1 || n ==2){   //这里是重点，处理特殊情况的
+                F3 = 1;
+            }else{
+                F3 = F1 +F2;
+                F1 = F2;
+                F2 = F3;
+            }
+        }
+        System.out.println(F3);
+```
