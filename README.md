@@ -107,3 +107,10 @@ public class Main {
 }
 ```
 **这里容易错的是for循环中num的和，如果有分数要用小数，带小数点，不然计算机会算成整数**
+
+
+- 注意点
+```
+System.out.println("%.3f",num);   // 错误：println 不支持两个参数
+System.out.printf("%.3f", num);   // 正确
+```
