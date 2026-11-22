@@ -90,3 +90,20 @@ case 1,4,5,6 -> System.out.println("星期一");
            };
         System.out.println(name);
 ```
+## 易错点
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        double num = 0;
+        for (int i = 1; i <= n; i++) {
+            num += 1.0 / i;   // 关键：1.0 保证是浮点除法
+        }
+        System.out.println(num);
+    }
+}
+```
+**这里容易错的是for循环中num的和，如果有分数要用小数，带小数点，不然计算机会算成整数**
