@@ -132,3 +132,9 @@ Scanner sc = new Scanner(System.in);
         }
         System.out.println(F3);
 ```
+- 循环快速生成的方式：次数+.+for+i+回车(3.fori)
+```
+for (int i = 0; i < 3; i++) {
+            
+        }
+```
