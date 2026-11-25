@@ -139,3 +139,7 @@ for (int i = 0; i < 3; i++) {
         }
 ```
 - 快捷键：shift + F6 + 变量名 （可以将使用相同的变量名一键换名）
+```
+System.out.println();//先打印再换行
+System.out.print();//打印不换行
+```
